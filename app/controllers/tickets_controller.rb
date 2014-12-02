@@ -1,7 +1,7 @@
 class TicketsController < ApplicationController
   before_action :set_project
   before_action :set_ticket, only: [:show, :edit, :update, :destroy]
-  
+
   def new
     @ticket = @project.tickets.build
   end
@@ -15,7 +15,20 @@ class TicketsController < ApplicationController
       flash[:alert] = "Ticket has not been created."
       render "new"
     end
-  end 
+  end
+
+  def edit
+  end
+
+  def update
+    if @ticket.update(ticket_params)
+      flash[:notice] = "Ticket has been updated."
+      redirect_to [@project, @ticket]
+    else
+      flash[:alert] = "Ticket has not been updated."
+      render action: "edit"
+    end
+  end
 
   private
   def set_project
