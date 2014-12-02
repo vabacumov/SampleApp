@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 feature "Deleting projects" do
   scenario "Deleting a project" do

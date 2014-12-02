@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 feature "Viewing projects" do
   scenario "Listing all projects" do

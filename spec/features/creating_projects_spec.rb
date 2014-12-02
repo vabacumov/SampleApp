@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helpers'
 
 feature 'Creating Projects' do
   before do

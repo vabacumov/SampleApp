@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 feature "Creating Tickets" do
   before do
     FactoryGirl.create(:project, name: "Internet Explorer")
