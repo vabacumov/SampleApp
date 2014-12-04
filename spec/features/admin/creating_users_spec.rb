@@ -28,7 +28,7 @@ feature "Creating Users" do
 
     expect(page).to have_content("User has been created")
     within("#users") do
-      expect(page).to have_content("sample@example.com (Admin)")
+      expect(page).to have_content("admin@example.com (Admin)")
     end
   end 
 end
