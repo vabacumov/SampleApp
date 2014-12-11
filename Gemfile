@@ -31,6 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'cancan', '~> 1.6.10'
 
+gem 'carrierwave', '0.8.0'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -43,6 +45,7 @@ gem 'cancan', '~> 1.6.10'
 group :test, :development do
   gem 'rspec-rails'
 end
+
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails', '~> 4.2.1'
