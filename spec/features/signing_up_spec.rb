@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Signing up' do
-  xscenario 'Successful sign up' do
+  scenario 'Successful sign up' do
     visit '/'
     click_link 'Sign up'
     fill_in "Email", with: "user@example.com"
