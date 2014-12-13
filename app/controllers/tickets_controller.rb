@@ -22,6 +22,10 @@ class TicketsController < ApplicationController
       render "new"
     end
   end
+  
+  def show
+    @comment = @ticket.comments.build
+  end
 
   def edit
   end
